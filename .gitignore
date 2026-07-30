@@ -1,0 +1,5 @@
+# Caché de despliegue de Firebase
+.firebase/
+
+# Archivos del sistema
+.DS_Store

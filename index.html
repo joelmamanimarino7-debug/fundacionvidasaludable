@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="img/favicon-180.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="home">
 
 <header class="site-header" id="siteHeader">
   <div class="container">
@@ -18,14 +18,17 @@
       <span>Fundación<br>Vida Saludable</span>
     </a>
     <nav class="main-nav" id="mainNav">
-      <a href="index.html" class="active">Inicio</a>
-      <a href="equipo.html">Nuestro Equipo</a>
-      <a href="programas.html">Programas y Proyectos</a>
-      <a href="donaciones.html">Apoyo y Donaciones</a>
+      <a href="index.html" class="active" data-i18n="nav.home">Inicio</a>
+      <a href="equipo.html" data-i18n="nav.team">Nuestro Equipo</a>
+      <a href="programas.html" data-i18n="nav.programs">Programas y Proyectos</a>
+      <a href="donaciones.html" data-i18n="nav.donate">Apoyo y Donaciones</a>
     </nav>
     <div class="header-actions">
-      <span class="lang-pill">ES</span>
-      <a href="donaciones.html" class="btn btn--primary btn--sm">Apoya</a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma / Switch language">
+        <span data-lang="es" class="is-active">ES</span>
+        <span data-lang="en">EN</span>
+      </button>
+      <a href="donaciones.html" class="btn btn--primary btn--sm" data-i18n="btn.support">Apoya</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
       <span></span><span></span><span></span>
@@ -34,10 +37,10 @@
 </header>
 <div class="nav-overlay" id="navOverlay">
   <ul>
-      <li><a href="index.html" class="active">Inicio</a></li>
-      <li><a href="equipo.html">Nuestro Equipo</a></li>
-      <li><a href="programas.html">Programas y Proyectos</a></li>
-      <li><a href="donaciones.html">Apoyo y Donaciones</a></li>
+      <li><a href="index.html" class="active" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="equipo.html" data-i18n="nav.team">Nuestro Equipo</a></li>
+      <li><a href="programas.html" data-i18n="nav.programs">Programas y Proyectos</a></li>
+      <li><a href="donaciones.html" data-i18n="nav.donate">Apoyo y Donaciones</a></li>
   </ul>
 </div>
 
@@ -47,14 +50,14 @@
   <div class="hero__overlay"></div>
   <div class="container hero__content">
     <div class="eyebrow">Fundación Vida Saludable · VISA</div>
-    <h1>Sembrando vida, <em>esperanza</em><br>y desarrollo integral</h1>
-    <p class="lead">Somos una fundación cristiana sin fines de lucro que trabaja por el bienestar de niños, adolescentes, jóvenes, mujeres gestantes y familias en situación de vulnerabilidad.</p>
+    <h1 data-i18n="hero.title">Sembrando vida, <em>esperanza</em><br>y desarrollo integral</h1>
+    <p class="lead" data-i18n="hero.lead">Somos una fundación cristiana sin fines de lucro que trabaja por el bienestar de niños, adolescentes, jóvenes, mujeres gestantes y familias en situación de vulnerabilidad.</p>
     <div class="hero__cta">
-      <a href="donaciones.html" class="btn btn--primary">Apoya la misión</a>
-      <a href="programas.html" class="btn btn--outline">Conoce nuestros programas</a>
+      <a href="donaciones.html" class="btn btn--primary" data-i18n="hero.cta1">Apoya la misión</a>
+      <a href="programas.html" class="btn btn--outline" data-i18n="hero.cta2">Conoce nuestros programas</a>
     </div>
   </div>
-  <div class="hero__scroll">Descubre más ↓</div>
+  <div class="hero__scroll" data-i18n="hero.scroll">Descubre más ↓</div>
 </section>
 
 <section class="section" id="quienes-somos">
@@ -66,15 +69,15 @@
         </div>
         <div class="about-badge">
           <strong>+5</strong>
-          <span>Años de servicio</span>
+          <span data-i18n="about.badge">Años de servicio</span>
         </div>
       </figure>
       <div class="about-copy reveal reveal-delay-1">
-        <div class="eyebrow">¿Quiénes somos?</div>
-        <h2>Una fundación creada por cristianos, al servicio de la comunidad</h2>
-        <p>La Fundación Vida Saludable "VISA" es una organización sin fines de lucro, fundada por un grupo de personas que profesan la fe en Cristo, unidas por el amor a los niños, preadolescentes, adolescentes, jóvenes, mujeres en estado de gestación y comunidades más vulnerables.</p>
-        <p>Los asistimos mediante convenios de cooperación con entidades públicas y privadas, creando centros de desarrollo integral y apoyo escolar: alternativas alimentarias, acompañamiento socioeducativo y acceso a servicios médicos básicos, todo basado en principios cristianos.</p>
-        <a href="equipo.html" class="btn btn--green btn--sm">Conoce a nuestro equipo</a>
+        <div class="eyebrow" data-i18n="about.eyebrow">¿Quiénes somos?</div>
+        <h2 data-i18n="about.title">Una fundación creada por cristianos, al servicio de la comunidad</h2>
+        <p data-i18n="about.p1">La Fundación Vida Saludable "VISA" es una organización sin fines de lucro, fundada por un grupo de personas que profesan la fe en Cristo, unidas por el amor a los niños, preadolescentes, adolescentes, jóvenes, mujeres en estado de gestación y comunidades más vulnerables.</p>
+        <p data-i18n="about.p2">Los asistimos mediante convenios de cooperación con entidades públicas y privadas, creando centros de desarrollo integral y apoyo escolar: alternativas alimentarias, acompañamiento socioeducativo y acceso a servicios médicos básicos, todo basado en principios cristianos.</p>
+        <a href="equipo.html" class="btn btn--green btn--sm" data-i18n="about.btn">Conoce a nuestro equipo</a>
       </div>
     </div>
   </div>
@@ -87,17 +90,17 @@
         <div class="icon-badge icon-badge--red">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
         </div>
-        <div class="eyebrow">Visión 2029</div>
-        <h3>Hacia dónde vamos</h3>
-        <p>Ser una institución comprometida con programas que promuevan oportunidades de crecimiento integral en educación, salud y protección, basados en principios y valores.</p>
+        <div class="eyebrow" data-i18n="vision.eyebrow">Visión 2029</div>
+        <h3 data-i18n="vision.h">Hacia dónde vamos</h3>
+        <p data-i18n="vision.p">Ser una institución comprometida con programas que promuevan oportunidades de crecimiento integral en educación, salud y protección, basados en principios y valores.</p>
       </div>
       <div class="vm-card vm-card--mission reveal reveal-delay-1">
         <div class="icon-badge icon-badge--green">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.9 6.3L21 9l-4.5 4.6L17.8 21 12 17.6 6.2 21l1.3-7.4L3 9l6.1-.7z"/></svg>
         </div>
-        <div class="eyebrow">Misión</div>
-        <h3>Lo que hacemos cada día</h3>
-        <p>Somos sembradores que promovemos oportunidades para potenciar el bienestar de los niños, jóvenes y sus familias, con programas integrales que fortalecen la unidad familiar.</p>
+        <div class="eyebrow" data-i18n="mission.eyebrow">Misión</div>
+        <h3 data-i18n="mission.h">Lo que hacemos cada día</h3>
+        <p data-i18n="mission.p">Somos sembradores que promovemos oportunidades para potenciar el bienestar de los niños, jóvenes y sus familias, con programas integrales que fortalecen la unidad familiar.</p>
       </div>
     </div>
   </div>
@@ -106,45 +109,45 @@
 <section class="section" id="valores">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow" style="justify-content:center">Nuestros valores</div>
-      <h2>Los principios que guían nuestro trabajo</h2>
-      <p>Nuestros fundamentos están en valores sólidos que orientan cada una de nuestras acciones y decisiones, reflejando nuestro compromiso con niños, adolescentes, jóvenes y familias en vulnerabilidad.</p>
+      <div class="eyebrow" style="justify-content:center" data-i18n="values.eyebrow">Nuestros valores</div>
+      <h2 data-i18n="values.title">Los principios que guían nuestro trabajo</h2>
+      <p data-i18n="values.sub">Nuestros fundamentos están en valores sólidos que orientan cada una de nuestras acciones y decisiones, reflejando nuestro compromiso con niños, adolescentes, jóvenes y familias en vulnerabilidad.</p>
     </div>
     <div class="values-grid">
       <div class="value-card reveal">
         <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
-        <h4>Amor</h4>
-        <p>Creemos que si amamos a Dios, demostraremos amor a nuestro prójimo.</p>
+        <h4 data-i18n="value.love.h">Amor</h4>
+        <p data-i18n="value.love.p">Creemos que si amamos a Dios, demostraremos amor a nuestro prójimo.</p>
       </div>
       <div class="value-card reveal reveal-delay-1">
         <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6z"/></svg></div>
-        <h4>Protección</h4>
-        <p>Velamos por la integridad de cada niño y niña que forma parte de nuestros programas.</p>
+        <h4 data-i18n="value.protection.h">Protección</h4>
+        <p data-i18n="value.protection.p">Velamos por la integridad de cada niño y niña que forma parte de nuestros programas.</p>
       </div>
       <div class="value-card reveal reveal-delay-2">
         <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 15.9 6.4 19l1.4-6.3-4.8-4.3 6.4-.6z"/></svg></div>
-        <h4>Excelencia</h4>
-        <p>Realizamos nuestro trabajo con excelencia, para glorificar a Dios en cada acción.</p>
+        <h4 data-i18n="value.excellence.h">Excelencia</h4>
+        <p data-i18n="value.excellence.p">Realizamos nuestro trabajo con excelencia, para glorificar a Dios en cada acción.</p>
       </div>
       <div class="value-card reveal reveal-delay-3">
         <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M12 3l8 4-8 4-8-4z"/></svg></div>
-        <h4>Honestidad</h4>
-        <p>Actuamos de manera íntegra y transparente en cada gestión de la fundación.</p>
+        <h4 data-i18n="value.honesty.h">Honestidad</h4>
+        <p data-i18n="value.honesty.p">Actuamos de manera íntegra y transparente en cada gestión de la fundación.</p>
       </div>
       <div class="value-card reveal">
         <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.5v6c0 5.2-3.8 9.5-9 10.5-5.2-1-9-5.3-9-10.5v-6z"/></svg></div>
-        <h4>Autoridad</h4>
-        <p>Reconocemos a Dios como la primera autoridad, sostén de toda autoridad humana.</p>
+        <h4 data-i18n="value.authority.h">Autoridad</h4>
+        <p data-i18n="value.authority.p">Reconocemos a Dios como la primera autoridad, sostén de toda autoridad humana.</p>
       </div>
       <div class="value-card reveal reveal-delay-1">
         <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></div>
-        <h4>Proactividad</h4>
-        <p>Nos preparamos con anticipación para responder a los desafíos del futuro.</p>
+        <h4 data-i18n="value.proactivity.h">Proactividad</h4>
+        <p data-i18n="value.proactivity.p">Nos preparamos con anticipación para responder a los desafíos del futuro.</p>
       </div>
       <div class="value-card reveal reveal-delay-2">
         <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9C1 8 3 4 7 4c2 0 4 1.5 5 3 1-1.5 3-3 5-3 4 0 6 4 4.5 8-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
-        <h4>Servicio</h4>
-        <p>Servimos primero a Dios y, a través de Él, a cada persona que lo necesita.</p>
+        <h4 data-i18n="value.service.h">Servicio</h4>
+        <p data-i18n="value.service.p">Servimos primero a Dios y, a través de Él, a cada persona que lo necesita.</p>
       </div>
     </div>
   </div>
@@ -153,10 +156,10 @@
 <section class="section">
   <div class="container reveal">
     <div class="cta-band">
-      <div class="eyebrow" style="justify-content:center;color:#ffe3df">Súmate a la misión</div>
-      <h2>Cada contribución es una semilla de esperanza</h2>
-      <p>Con la ayuda de Dios todo es posible. Tu apoyo transforma la vida de niños, adolescentes y familias en Sucre.</p>
-      <a href="donaciones.html" class="btn" style="background:#fff;color:var(--red-dark);box-shadow:var(--shadow)">Quiero apoyar</a>
+      <div class="eyebrow" style="justify-content:center;color:#ffe3df" data-i18n="home.cta.eyebrow">Súmate a la misión</div>
+      <h2 data-i18n="home.cta.title">Cada contribución es una semilla de esperanza</h2>
+      <p data-i18n="home.cta.p">Con la ayuda de Dios todo es posible. Tu apoyo transforma la vida de niños, adolescentes y familias en Sucre.</p>
+      <a href="donaciones.html" class="btn" style="background:#fff;color:var(--red-dark);box-shadow:var(--shadow)" data-i18n="home.cta.btn">Quiero apoyar</a>
     </div>
   </div>
 </section>
@@ -166,7 +169,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand"><img src="img/logo-icono.png" alt="Fundación Vida Saludable"><span>Fundación<br>Vida Saludable</span></a>
-        <p>Organización cristiana sin fines de lucro dedicada al desarrollo integral de niños, adolescentes, jóvenes y familias en Sucre, Bolivia.</p>
+        <p data-i18n="footer.about">Organización cristiana sin fines de lucro dedicada al desarrollo integral de niños, adolescentes, jóvenes y familias en Sucre, Bolivia.</p>
         <div class="social-row">
           <a href="https://www.facebook.com/share/16pjw7duJ1/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H16.7V3.6C16.4 3.55 15.4 3.47 14.2 3.47c-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.7v8z"/></svg></a>
           <a href="https://www.instagram.com/joel12sucre?igsh=d25ieDIzNWUwOWVv&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 3c2.44 0 2.74 0 3.7.05 1 .05 1.6.2 2.13.4a4.4 4.4 0 0 1 1.6 1 4.4 4.4 0 0 1 1 1.6c.2.53.35 1.13.4 2.13.05.96.05 1.26.05 3.7s0 2.74-.05 3.7c-.05 1-.2 1.6-.4 2.13a4.4 4.4 0 0 1-1 1.6 4.4 4.4 0 0 1-1.6 1c-.53.2-1.13.35-2.13.4-.96.05-1.26.05-3.7.05s-2.74 0-3.7-.05c-1-.05-1.6-.2-2.13-.4a4.4 4.4 0 0 1-1.6-1 4.4 4.4 0 0 1-1-1.6c-.2-.53-.35-1.13-.4-2.13C3 14.74 3 14.44 3 12s0-2.74.05-3.7c.05-1 .2-1.6.4-2.13a4.4 4.4 0 0 1 1-1.6 4.4 4.4 0 0 1 1.6-1c.53-.2 1.13-.35 2.13-.4C9.26 3 9.56 3 12 3zm0 1.8c-2.4 0-2.68 0-3.63.05-.82.04-1.27.17-1.56.29-.39.15-.67.33-.97.63-.3.3-.48.58-.63.97-.12.29-.25.74-.29 1.56C4.87 9.3 4.85 9.6 4.85 12s0 2.68.06 3.63c.04.82.17 1.27.29 1.56.15.39.33.67.63.97.3.3.58.48.97.63.29.12.74.25 1.56.29.94.05 1.22.06 3.62.06s2.68 0 3.63-.06c.82-.04 1.27-.17 1.56-.29.39-.15.67-.33.97-.63.3-.3.48-.58.63-.97.12-.29.25-.74.29-1.56.05-.94.06-1.22.06-3.62s0-2.68-.06-3.63c-.04-.82-.17-1.27-.29-1.56a2.6 2.6 0 0 0-.63-.97 2.6 2.6 0 0 0-.97-.63c-.29-.12-.74-.25-1.56-.29-.94-.05-1.22-.06-3.62-.06zm0 3.06a4.14 4.14 0 1 1 0 8.28 4.14 4.14 0 0 1 0-8.28zm0 1.8a2.34 2.34 0 1 0 0 4.68 2.34 2.34 0 0 0 0-4.68zm5.27-1.98a.97.97 0 1 1-1.93 0 .97.97 0 0 1 1.93 0z"/></svg></a>
@@ -174,16 +177,16 @@
         </div>
       </div>
       <div class="footer-col">
-        <h4>Navegación</h4>
+        <h4 data-i18n="footer.navTitle">Navegación</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="equipo.html">Nuestro Equipo</a></li>
-          <li><a href="programas.html">Programas y Proyectos</a></li>
-          <li><a href="donaciones.html">Apoyo y Donaciones</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="equipo.html" data-i18n="nav.team">Nuestro Equipo</a></li>
+          <li><a href="programas.html" data-i18n="nav.programs">Programas y Proyectos</a></li>
+          <li><a href="donaciones.html" data-i18n="nav.donate">Apoyo y Donaciones</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="footer.contactTitle">Contacto</h4>
         <ul>
           <li><a href="https://wa.me/59175791029" target="_blank" rel="noopener">+591 75791029</a></li>
           <li><a href="https://www.facebook.com/share/16pjw7duJ1/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></li>
@@ -192,7 +195,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> Fundación Vida Saludable "VISA". Todos los derechos reservados.</span>
+      <span>© <span id="year"></span> Fundación Vida Saludable "VISA". <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
       <span>Sucre, Bolivia</span>
     </div>
   </div>
@@ -204,6 +207,7 @@
 <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

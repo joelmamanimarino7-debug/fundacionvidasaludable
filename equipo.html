@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="img/favicon-180.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="team">
 
 <header class="site-header" id="siteHeader">
   <div class="container">
@@ -18,14 +18,17 @@
       <span>Fundación<br>Vida Saludable</span>
     </a>
     <nav class="main-nav" id="mainNav">
-      <a href="index.html">Inicio</a>
-      <a href="equipo.html" class="active">Nuestro Equipo</a>
-      <a href="programas.html">Programas y Proyectos</a>
-      <a href="donaciones.html">Apoyo y Donaciones</a>
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <a href="equipo.html" class="active" data-i18n="nav.team">Nuestro Equipo</a>
+      <a href="programas.html" data-i18n="nav.programs">Programas y Proyectos</a>
+      <a href="donaciones.html" data-i18n="nav.donate">Apoyo y Donaciones</a>
     </nav>
     <div class="header-actions">
-      <span class="lang-pill">ES</span>
-      <a href="donaciones.html" class="btn btn--primary btn--sm">Apoya</a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma / Switch language">
+        <span data-lang="es" class="is-active">ES</span>
+        <span data-lang="en">EN</span>
+      </button>
+      <a href="donaciones.html" class="btn btn--primary btn--sm" data-i18n="btn.support">Apoya</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
       <span></span><span></span><span></span>
@@ -34,19 +37,19 @@
 </header>
 <div class="nav-overlay" id="navOverlay">
   <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="equipo.html" class="active">Nuestro Equipo</a></li>
-      <li><a href="programas.html">Programas y Proyectos</a></li>
-      <li><a href="donaciones.html">Apoyo y Donaciones</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="equipo.html" class="active" data-i18n="nav.team">Nuestro Equipo</a></li>
+      <li><a href="programas.html" data-i18n="nav.programs">Programas y Proyectos</a></li>
+      <li><a href="donaciones.html" data-i18n="nav.donate">Apoyo y Donaciones</a></li>
   </ul>
 </div>
 
 
 <section class="page-hero">
   <div class="container">
-    <div class="eyebrow">Nuestro Equipo</div>
-    <h1>Personas comprometidas con el servicio a Dios y a la comunidad</h1>
-    <p>Pastores, directorio, personal administrativo, tutoras y voluntarios trabajando juntos por el desarrollo integral de cada participante.</p>
+    <div class="eyebrow" data-i18n="team.eyebrow">Nuestro Equipo</div>
+    <h1 data-i18n="team.title">Personas comprometidas con el servicio a Dios y a la comunidad</h1>
+    <p data-i18n="team.sub">Pastores, directorio, personal administrativo, tutoras y voluntarios trabajando juntos por el desarrollo integral de cada participante.</p>
   </div>
 </section>
 
@@ -54,90 +57,90 @@
   <div class="container">
 
     <div class="team-group reveal">
-      <h3>Pastores</h3>
+      <h3 data-i18n="team.group.pastors">Pastores</h3>
       <div class="team-grid">
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/gabino-lomar-carazani.jpg" alt="Gabino Lomar Carazani"></div>
           <h4>Gabino Lomar Carazani</h4>
-          <span>Pastor</span>
+          <span data-i18n="role.pastor.m">Pastor</span>
         </div>
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/delicia-mancilla-godoy.jpg" alt="Delicia Mancilla Godoy"></div>
           <h4>Delicia Mancilla Godoy</h4>
-          <span>Pastora</span>
+          <span data-i18n="role.pastor.f">Pastora</span>
         </div>
       </div>
     </div>
 
     <div class="team-group reveal">
-      <h3>Directorio</h3>
+      <h3 data-i18n="team.group.board">Directorio</h3>
       <div class="team-grid">
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/eber-cruz-flores.jpg" alt="Eber Cruz Flores"></div>
           <h4>Eber Cruz Flores</h4>
-          <span>Representante Legal</span>
+          <span data-i18n="role.legalRep">Representante Legal</span>
         </div>
         <div class="team-card">
           <div class="team-photo no-photo">SP</div>
           <h4>Sonia Peralta</h4>
-          <span>Vicepresidenta</span>
+          <span data-i18n="role.vicePresident">Vicepresidenta</span>
         </div>
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/edgar-quelca-alcon.jpg" alt="Edgar Quelca Alcon"></div>
           <h4>Edgar Quelca Alcon</h4>
-          <span>Tesorero</span>
+          <span data-i18n="role.treasurer">Tesorero</span>
         </div>
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/guido-gonzales.jpg" alt="Guido Gonzales"></div>
           <h4>Guido Gonzales</h4>
-          <span>Secretario</span>
+          <span data-i18n="role.secretary">Secretario</span>
         </div>
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/francisca-chara-martinez.jpg" alt="Francisca Chara Martínez"></div>
           <h4>Francisca Chara Martínez</h4>
-          <span>Vocal</span>
+          <span data-i18n="role.member">Vocal</span>
         </div>
       </div>
     </div>
 
     <div class="team-group reveal">
-      <h3>Equipo administrativo</h3>
+      <h3 data-i18n="team.group.admin">Equipo administrativo</h3>
       <div class="team-grid">
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/limbert-cruz-huanaco.jpg" alt="Limbert Cruz Huanaco"></div>
           <h4>Limbert Cruz Huanaco</h4>
-          <span>Director</span>
+          <span data-i18n="role.director">Director</span>
         </div>
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/olga-gonzales-gonzales.jpg" alt="Olga Gonzales Gonzales"></div>
           <h4>Olga Gonzales Gonzales</h4>
-          <span>Asistente Administrativo</span>
+          <span data-i18n="role.adminAssistant">Asistente Administrativo</span>
         </div>
       </div>
     </div>
 
     <div class="team-group reveal">
-      <h3>Voluntariado y tutoría</h3>
+      <h3 data-i18n="team.group.volunteers">Voluntariado y tutoría</h3>
       <div class="team-grid">
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/edith-taboada.jpg" alt="Edith Taboada"></div>
           <h4>Edith Taboada</h4>
-          <span>Voluntaria</span>
+          <span data-i18n="role.volunteer.f">Voluntaria</span>
         </div>
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/cinthia-condo-castel.jpg" alt="Cinthia Condo Castel"></div>
           <h4>Cinthia Condo Castel</h4>
-          <span>Implementadora</span>
+          <span data-i18n="role.implementer">Implementadora</span>
         </div>
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/rodrigo-soliz-reynaga.jpg" alt="Rodrigo Soliz Reynaga"></div>
           <h4>Rodrigo Soliz Reynaga</h4>
-          <span>Voluntario</span>
+          <span data-i18n="role.volunteer.m">Voluntario</span>
         </div>
         <div class="team-card">
           <div class="team-photo"><img src="img/equipo/gladys-lomar-mancilla.jpg" alt="Gladys Lomar Mancilla"></div>
           <h4>Gladys Lomar Mancilla</h4>
-          <span>Implementadora</span>
+          <span data-i18n="role.implementer">Implementadora</span>
         </div>
       </div>
     </div>
@@ -150,7 +153,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand"><img src="img/logo-icono.png" alt="Fundación Vida Saludable"><span>Fundación<br>Vida Saludable</span></a>
-        <p>Organización cristiana sin fines de lucro dedicada al desarrollo integral de niños, adolescentes, jóvenes y familias en Sucre, Bolivia.</p>
+        <p data-i18n="footer.about">Organización cristiana sin fines de lucro dedicada al desarrollo integral de niños, adolescentes, jóvenes y familias en Sucre, Bolivia.</p>
         <div class="social-row">
           <a href="https://www.facebook.com/share/16pjw7duJ1/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H16.7V3.6C16.4 3.55 15.4 3.47 14.2 3.47c-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.7v8z"/></svg></a>
           <a href="https://www.instagram.com/joel12sucre?igsh=d25ieDIzNWUwOWVv&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 3c2.44 0 2.74 0 3.7.05 1 .05 1.6.2 2.13.4a4.4 4.4 0 0 1 1.6 1 4.4 4.4 0 0 1 1 1.6c.2.53.35 1.13.4 2.13.05.96.05 1.26.05 3.7s0 2.74-.05 3.7c-.05 1-.2 1.6-.4 2.13a4.4 4.4 0 0 1-1 1.6 4.4 4.4 0 0 1-1.6 1c-.53.2-1.13.35-2.13.4-.96.05-1.26.05-3.7.05s-2.74 0-3.7-.05c-1-.05-1.6-.2-2.13-.4a4.4 4.4 0 0 1-1.6-1 4.4 4.4 0 0 1-1-1.6c-.2-.53-.35-1.13-.4-2.13C3 14.74 3 14.44 3 12s0-2.74.05-3.7c.05-1 .2-1.6.4-2.13a4.4 4.4 0 0 1 1-1.6 4.4 4.4 0 0 1 1.6-1c.53-.2 1.13-.35 2.13-.4C9.26 3 9.56 3 12 3zm0 1.8c-2.4 0-2.68 0-3.63.05-.82.04-1.27.17-1.56.29-.39.15-.67.33-.97.63-.3.3-.48.58-.63.97-.12.29-.25.74-.29 1.56C4.87 9.3 4.85 9.6 4.85 12s0 2.68.06 3.63c.04.82.17 1.27.29 1.56.15.39.33.67.63.97.3.3.58.48.97.63.29.12.74.25 1.56.29.94.05 1.22.06 3.62.06s2.68 0 3.63-.06c.82-.04 1.27-.17 1.56-.29.39-.15.67-.33.97-.63.3-.3.48-.58.63-.97.12-.29.25-.74.29-1.56.05-.94.06-1.22.06-3.62s0-2.68-.06-3.63c-.04-.82-.17-1.27-.29-1.56a2.6 2.6 0 0 0-.63-.97 2.6 2.6 0 0 0-.97-.63c-.29-.12-.74-.25-1.56-.29-.94-.05-1.22-.06-3.62-.06zm0 3.06a4.14 4.14 0 1 1 0 8.28 4.14 4.14 0 0 1 0-8.28zm0 1.8a2.34 2.34 0 1 0 0 4.68 2.34 2.34 0 0 0 0-4.68zm5.27-1.98a.97.97 0 1 1-1.93 0 .97.97 0 0 1 1.93 0z"/></svg></a>
@@ -158,16 +161,16 @@
         </div>
       </div>
       <div class="footer-col">
-        <h4>Navegación</h4>
+        <h4 data-i18n="footer.navTitle">Navegación</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="equipo.html">Nuestro Equipo</a></li>
-          <li><a href="programas.html">Programas y Proyectos</a></li>
-          <li><a href="donaciones.html">Apoyo y Donaciones</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="equipo.html" data-i18n="nav.team">Nuestro Equipo</a></li>
+          <li><a href="programas.html" data-i18n="nav.programs">Programas y Proyectos</a></li>
+          <li><a href="donaciones.html" data-i18n="nav.donate">Apoyo y Donaciones</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="footer.contactTitle">Contacto</h4>
         <ul>
           <li><a href="https://wa.me/59175791029" target="_blank" rel="noopener">+591 75791029</a></li>
           <li><a href="https://www.facebook.com/share/16pjw7duJ1/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></li>
@@ -176,7 +179,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> Fundación Vida Saludable "VISA". Todos los derechos reservados.</span>
+      <span>© <span id="year"></span> Fundación Vida Saludable "VISA". <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
       <span>Sucre, Bolivia</span>
     </div>
   </div>
@@ -188,6 +191,7 @@
 <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

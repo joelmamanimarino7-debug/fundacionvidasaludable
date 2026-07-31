@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="img/favicon-180.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="programs">
 
 <header class="site-header" id="siteHeader">
   <div class="container">
@@ -18,14 +18,17 @@
       <span>Fundación<br>Vida Saludable</span>
     </a>
     <nav class="main-nav" id="mainNav">
-      <a href="index.html">Inicio</a>
-      <a href="equipo.html">Nuestro Equipo</a>
-      <a href="programas.html" class="active">Programas y Proyectos</a>
-      <a href="donaciones.html">Apoyo y Donaciones</a>
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <a href="equipo.html" data-i18n="nav.team">Nuestro Equipo</a>
+      <a href="programas.html" class="active" data-i18n="nav.programs">Programas y Proyectos</a>
+      <a href="donaciones.html" data-i18n="nav.donate">Apoyo y Donaciones</a>
     </nav>
     <div class="header-actions">
-      <span class="lang-pill">ES</span>
-      <a href="donaciones.html" class="btn btn--primary btn--sm">Apoya</a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma / Switch language">
+        <span data-lang="es" class="is-active">ES</span>
+        <span data-lang="en">EN</span>
+      </button>
+      <a href="donaciones.html" class="btn btn--primary btn--sm" data-i18n="btn.support">Apoya</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
       <span></span><span></span><span></span>
@@ -34,19 +37,19 @@
 </header>
 <div class="nav-overlay" id="navOverlay">
   <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="equipo.html">Nuestro Equipo</a></li>
-      <li><a href="programas.html" class="active">Programas y Proyectos</a></li>
-      <li><a href="donaciones.html">Apoyo y Donaciones</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="equipo.html" data-i18n="nav.team">Nuestro Equipo</a></li>
+      <li><a href="programas.html" class="active" data-i18n="nav.programs">Programas y Proyectos</a></li>
+      <li><a href="donaciones.html" data-i18n="nav.donate">Apoyo y Donaciones</a></li>
   </ul>
 </div>
 
 
 <section class="page-hero">
   <div class="container">
-    <div class="eyebrow">Programas y Proyectos</div>
-    <h1>Un camino de desarrollo integral, paso a paso</h1>
-    <p>Acompañamos a cada niño, niña, adolescente y joven según su etapa de vida, fortaleciendo su desarrollo espiritual, físico, cognitivo y socioemocional.</p>
+    <div class="eyebrow" data-i18n="prog.eyebrow">Programas y Proyectos</div>
+    <h1 data-i18n="prog.title">Un camino de desarrollo integral, paso a paso</h1>
+    <p data-i18n="prog.sub">Acompañamos a cada niño, niña, adolescente y joven según su etapa de vida, fortaleciendo su desarrollo espiritual, físico, cognitivo y socioemocional.</p>
   </div>
 </section>
 
@@ -56,68 +59,68 @@
 
       <div class="program-row">
         <div class="program-media reveal">
-          <span class="program-number">01 · Supervivencia</span>
+          <span class="program-number" data-i18n="prog1.num">01 · Supervivencia</span>
           <img src="img/fotos/supervivencia-salud.jpg" alt="Programa Supervivencia — salud materno infantil">
         </div>
         <div class="program-copy reveal reveal-delay-1">
-          <span class="program-age">Prenatal — 1 año</span>
-          <h3>Supervivencia</h3>
-          <p>Las áreas de enfoque incluyen salud pre y postnatal, planificación familiar, lactancia, educación para padres, acercamiento infantil y formación espiritual para madres gestantes, madres y sus bebés.</p>
+          <span class="program-age" data-i18n="prog1.age">Prenatal — 1 año</span>
+          <h3 data-i18n="prog1.h">Supervivencia</h3>
+          <p data-i18n="prog1.p">Las áreas de enfoque incluyen salud pre y postnatal, planificación familiar, lactancia, educación para padres, acercamiento infantil y formación espiritual para madres gestantes, madres y sus bebés.</p>
           <div class="program-tags">
-            <span>Salud pre y postnatal</span>
-            <span>Educación para padres</span>
-            <span>Formación espiritual</span>
+            <span data-i18n="prog1.tag1">Salud pre y postnatal</span>
+            <span data-i18n="prog1.tag2">Educación para padres</span>
+            <span data-i18n="prog1.tag3">Formación espiritual</span>
           </div>
         </div>
       </div>
 
       <div class="program-row">
         <div class="program-media reveal">
-          <span class="program-number">02 · Base Hogar</span>
+          <span class="program-number" data-i18n="prog2.num">02 · Base Hogar</span>
           <img src="img/fotos/base-hogar-recreacion.jpg" alt="Programa Base Hogar — niños de 1 a 5 años">
         </div>
         <div class="program-copy reveal reveal-delay-1">
-          <span class="program-age">1 — 5 años</span>
-          <h3>Base Hogar</h3>
-          <p>Cubre a los niños desde el primer año hasta los cinco años. Es la etapa en la que se abre la posibilidad de patrocinio, y el niño continúa recibiendo acompañamiento junto a un cuidador de referencia.</p>
+          <span class="program-age" data-i18n="prog2.age">1 — 5 años</span>
+          <h3 data-i18n="prog2.h">Base Hogar</h3>
+          <p data-i18n="prog2.p">Cubre a los niños desde el primer año hasta los cinco años. Es la etapa en la que se abre la posibilidad de patrocinio, y el niño continúa recibiendo acompañamiento junto a un cuidador de referencia.</p>
           <div class="program-tags">
-            <span>Patrocinio</span>
-            <span>Acompañamiento familiar</span>
-            <span>Estimulación temprana</span>
+            <span data-i18n="prog2.tag1">Patrocinio</span>
+            <span data-i18n="prog2.tag2">Acompañamiento familiar</span>
+            <span data-i18n="prog2.tag3">Estimulación temprana</span>
           </div>
         </div>
       </div>
 
       <div class="program-row">
         <div class="program-media reveal">
-          <span class="program-number">03 · Triunfadores</span>
+          <span class="program-number" data-i18n="prog3.num">03 · Triunfadores</span>
           <img src="img/fotos/triunfadores-taller.jpg" alt="Programa Triunfadores — niños de 6 a 11 años">
         </div>
         <div class="program-copy reveal reveal-delay-1">
-          <span class="program-age">6 — 11 años</span>
-          <h3>Triunfadores</h3>
-          <p>Los niños reciben intervenciones adecuadas para su edad, dentro de grupos de pares y en interacciones uno a uno con el personal del proyecto, además de actividades extracurriculares y de servicio.</p>
+          <span class="program-age" data-i18n="prog3.age">6 — 11 años</span>
+          <h3 data-i18n="prog3.h">Triunfadores</h3>
+          <p data-i18n="prog3.p">Los niños reciben intervenciones adecuadas para su edad, dentro de grupos de pares y en interacciones uno a uno con el personal del proyecto, además de actividades extracurriculares y de servicio.</p>
           <div class="program-tags">
-            <span>Fe y valores</span>
-            <span>Actividades extracurriculares</span>
-            <span>Salud y bienestar</span>
+            <span data-i18n="prog3.tag1">Fe y valores</span>
+            <span data-i18n="prog3.tag2">Actividades extracurriculares</span>
+            <span data-i18n="prog3.tag3">Salud y bienestar</span>
           </div>
         </div>
       </div>
 
       <div class="program-row">
         <div class="program-media reveal">
-          <span class="program-number">04 · Generación Restauradores</span>
+          <span class="program-number" data-i18n="prog4.num">04 · Generación Restauradores</span>
           <img src="img/fotos/restauradores-grupo.jpg" alt="Programa Generación Restauradores — adolescentes de 12 a 14 años">
         </div>
         <div class="program-copy reveal reveal-delay-1">
-          <span class="program-age">12 — 14 años</span>
-          <h3>Generación Restauradores</h3>
-          <p>Los adolescentes forman parte de una generación llamada a ser restaurada, para luego influir positivamente en sus familias, comunidades y nación, a través de un currículo y actividades complementarias de liderazgo.</p>
+          <span class="program-age" data-i18n="prog4.age">12 — 14 años</span>
+          <h3 data-i18n="prog4.h">Generación Restauradores</h3>
+          <p data-i18n="prog4.p">Los adolescentes forman parte de una generación llamada a ser restaurada, para luego influir positivamente en sus familias, comunidades y nación, a través de un currículo y actividades complementarias de liderazgo.</p>
           <div class="program-tags">
-            <span>Liderazgo de servicio</span>
-            <span>Cultura bíblica</span>
-            <span>Desarrollo de habilidades</span>
+            <span data-i18n="prog4.tag1">Liderazgo de servicio</span>
+            <span data-i18n="prog4.tag2">Cultura bíblica</span>
+            <span data-i18n="prog4.tag3">Desarrollo de habilidades</span>
           </div>
         </div>
       </div>
@@ -129,10 +132,10 @@
 <section class="section section--cream">
   <div class="container reveal">
     <div class="cta-band" style="background:linear-gradient(120deg, var(--green-dark), var(--green) 60%, var(--red-dark))">
-      <div class="eyebrow" style="justify-content:center;color:#e3ffe0">Sé parte del cambio</div>
-      <h2>Tu apoyo hace posible cada programa</h2>
-      <p>Cada aporte se traduce en salud, educación y oportunidades reales para niños y familias de Sucre.</p>
-      <a href="donaciones.html" class="btn" style="background:#fff;color:var(--green-dark);box-shadow:var(--shadow)">Quiero apoyar</a>
+      <div class="eyebrow" style="justify-content:center;color:#e3ffe0" data-i18n="prog.cta.eyebrow">Sé parte del cambio</div>
+      <h2 data-i18n="prog.cta.title">Tu apoyo hace posible cada programa</h2>
+      <p data-i18n="prog.cta.p">Cada aporte se traduce en salud, educación y oportunidades reales para niños y familias de Sucre.</p>
+      <a href="donaciones.html" class="btn" style="background:#fff;color:var(--green-dark);box-shadow:var(--shadow)" data-i18n="prog.cta.btn">Quiero apoyar</a>
     </div>
   </div>
 </section>
@@ -142,7 +145,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand"><img src="img/logo-icono.png" alt="Fundación Vida Saludable"><span>Fundación<br>Vida Saludable</span></a>
-        <p>Organización cristiana sin fines de lucro dedicada al desarrollo integral de niños, adolescentes, jóvenes y familias en Sucre, Bolivia.</p>
+        <p data-i18n="footer.about">Organización cristiana sin fines de lucro dedicada al desarrollo integral de niños, adolescentes, jóvenes y familias en Sucre, Bolivia.</p>
         <div class="social-row">
           <a href="https://www.facebook.com/share/16pjw7duJ1/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H16.7V3.6C16.4 3.55 15.4 3.47 14.2 3.47c-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.7v8z"/></svg></a>
           <a href="https://www.instagram.com/joel12sucre?igsh=d25ieDIzNWUwOWVv&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 3c2.44 0 2.74 0 3.7.05 1 .05 1.6.2 2.13.4a4.4 4.4 0 0 1 1.6 1 4.4 4.4 0 0 1 1 1.6c.2.53.35 1.13.4 2.13.05.96.05 1.26.05 3.7s0 2.74-.05 3.7c-.05 1-.2 1.6-.4 2.13a4.4 4.4 0 0 1-1 1.6 4.4 4.4 0 0 1-1.6 1c-.53.2-1.13.35-2.13.4-.96.05-1.26.05-3.7.05s-2.74 0-3.7-.05c-1-.05-1.6-.2-2.13-.4a4.4 4.4 0 0 1-1.6-1 4.4 4.4 0 0 1-1-1.6c-.2-.53-.35-1.13-.4-2.13C3 14.74 3 14.44 3 12s0-2.74.05-3.7c.05-1 .2-1.6.4-2.13a4.4 4.4 0 0 1 1-1.6 4.4 4.4 0 0 1 1.6-1c.53-.2 1.13-.35 2.13-.4C9.26 3 9.56 3 12 3zm0 1.8c-2.4 0-2.68 0-3.63.05-.82.04-1.27.17-1.56.29-.39.15-.67.33-.97.63-.3.3-.48.58-.63.97-.12.29-.25.74-.29 1.56C4.87 9.3 4.85 9.6 4.85 12s0 2.68.06 3.63c.04.82.17 1.27.29 1.56.15.39.33.67.63.97.3.3.58.48.97.63.29.12.74.25 1.56.29.94.05 1.22.06 3.62.06s2.68 0 3.63-.06c.82-.04 1.27-.17 1.56-.29.39-.15.67-.33.97-.63.3-.3.48-.58.63-.97.12-.29.25-.74.29-1.56.05-.94.06-1.22.06-3.62s0-2.68-.06-3.63c-.04-.82-.17-1.27-.29-1.56a2.6 2.6 0 0 0-.63-.97 2.6 2.6 0 0 0-.97-.63c-.29-.12-.74-.25-1.56-.29-.94-.05-1.22-.06-3.62-.06zm0 3.06a4.14 4.14 0 1 1 0 8.28 4.14 4.14 0 0 1 0-8.28zm0 1.8a2.34 2.34 0 1 0 0 4.68 2.34 2.34 0 0 0 0-4.68zm5.27-1.98a.97.97 0 1 1-1.93 0 .97.97 0 0 1 1.93 0z"/></svg></a>
@@ -150,16 +153,16 @@
         </div>
       </div>
       <div class="footer-col">
-        <h4>Navegación</h4>
+        <h4 data-i18n="footer.navTitle">Navegación</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="equipo.html">Nuestro Equipo</a></li>
-          <li><a href="programas.html">Programas y Proyectos</a></li>
-          <li><a href="donaciones.html">Apoyo y Donaciones</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="equipo.html" data-i18n="nav.team">Nuestro Equipo</a></li>
+          <li><a href="programas.html" data-i18n="nav.programs">Programas y Proyectos</a></li>
+          <li><a href="donaciones.html" data-i18n="nav.donate">Apoyo y Donaciones</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contacto</h4>
+        <h4 data-i18n="footer.contactTitle">Contacto</h4>
         <ul>
           <li><a href="https://wa.me/59175791029" target="_blank" rel="noopener">+591 75791029</a></li>
           <li><a href="https://www.facebook.com/share/16pjw7duJ1/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></li>
@@ -168,7 +171,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> Fundación Vida Saludable "VISA". Todos los derechos reservados.</span>
+      <span>© <span id="year"></span> Fundación Vida Saludable "VISA". <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
       <span>Sucre, Bolivia</span>
     </div>
   </div>
@@ -180,6 +183,7 @@
 <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

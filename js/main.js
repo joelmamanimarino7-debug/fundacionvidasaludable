@@ -54,4 +54,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Portada del video: cargar el iframe de YouTube solo al hacer clic
+  const facade = document.getElementById('aboutVideo');
+  if (facade) {
+    facade.addEventListener('click', () => {
+      const id = facade.getAttribute('data-video');
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+      iframe.title = 'Presentación de la Fundación Vida Saludable';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+      facade.replaceWith(iframe);
+    });
+  }
 });

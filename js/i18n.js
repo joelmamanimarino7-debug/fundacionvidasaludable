@@ -27,6 +27,7 @@
 
       /* --- Inicio: quiénes somos --- */
       "about.eyebrow": "¿Quiénes somos?",
+      "about.heading": "¿Quiénes somos?",
       "about.title": "Una fundación creada por cristianos, al servicio de la comunidad",
       "about.p1": "La Fundación Vida Saludable \"VISA\" es una organización sin fines de lucro, fundada por un grupo de personas que profesan la fe en Cristo, unidas por el amor a los niños, preadolescentes, adolescentes, jóvenes, mujeres en estado de gestación y comunidades más vulnerables.",
       "about.p2": "Los asistimos mediante convenios de cooperación con entidades públicas y privadas, creando centros de desarrollo integral y apoyo escolar: alternativas alimentarias, acompañamiento socioeducativo y acceso a servicios médicos básicos, todo basado en principios cristianos.",
@@ -171,6 +172,7 @@
 
       /* --- Home: about --- */
       "about.eyebrow": "Who we are",
+      "about.heading": "Who we are",
       "about.title": "A foundation created by Christians, serving the community",
       "about.p1": "Fundación Vida Saludable \"VISA\" is a non-profit organization, founded by a group of people who profess faith in Christ, united by their love for children, preteens, teens, youth, expectant mothers and the most vulnerable communities.",
       "about.p2": "We assist them through cooperation agreements with public and private entities, creating centers for holistic development and school support: food alternatives, socio-educational guidance and access to basic medical services, all based on Christian principles.",
